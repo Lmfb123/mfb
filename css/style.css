@@ -1,0 +1,128 @@
+@font-face {
+    font-family: 'iconfont';
+    src: url('./font/iconfont.eot');
+    src: url('./font/iconfont.eot?#iefix') format('embedded-opentype'),
+        url('./font/iconfont.woff2') format('woff2'),
+        url('./font/iconfont.woff') format('woff'),
+        url('./font/iconfont.ttf') format('truetype'),
+        url('./font/iconfont.svg#iconfont') format('svg');
+  }
+  .iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  html,body{
+      width: 100%;
+      height: 100%;
+  }
+  .flx{
+      display: flex;
+  }
+  .logo{
+    position: absolute;
+    left: 0;
+    top: 0;
+  height: 120px;
+  width: 240px;
+  background: #fff;
+  color: darkgreen;
+  text-align: center;
+  line-height: 120px;
+  font-size: 54px;
+  font-weight: 100;
+}
+
+.btnbox{
+    width: 100%;
+    height: 40px;
+    justify-content: flex-end;
+}
+.bth{
+   width: 120px; 
+   height: 40px;
+   line-height: 40px;
+   text-align: center;
+}
+.nav{
+    background: green;
+}
+.navbox{
+    width: 100%;
+    height: 80px;
+    justify-content: flex-end;
+}
+.navitem{
+    width: 120px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    border-right: 1px solid #fff;
+    color: #fff;
+}
+/* 内容 */
+    .contentbox{
+        justify-content: space-between;
+    }
+    .ctt-lt , .ctt-rt{
+        width: 570px;
+        height: 300px;
+    }
+    .ctt-lt {
+        background: chartreuse;
+    }
+    .ctt-rt{
+        background: crimson;
+    }
+    .ft{
+        width: 100%;
+        background: green;
+    }
+    .footerbox{
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        color: #fff;
+    }
+    .ftitem{
+        margin: 0 5px;
+    }
+  @media screen and (min-device-width:1150px){
+      body{
+          color: crimson;
+      }
+      .inner{
+          width: 1150px;
+          margin: auto;
+          position: relative;
+      }
+      .banner{
+        background: grey;
+    }
+    .bannerimg{
+        width: 100%;
+        height: 300px;
+    }
+    .contentbox{
+        flex-direction: column;
+    }
+  }
+  @media screen and (min-device-width:650px) and (max-device-width:1150px){
+     .inner{
+         width: 100%;
+         position: relative;
+     }
+     .md-nane{
+         display: none;
+     }
+     .bannerimg{
+         width: 100%;
+     }
+  }
+  @media screen and (max-device-width:650px){
+      body{
+          color: gold;
+      }
+  }
